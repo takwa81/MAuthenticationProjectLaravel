@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +23,12 @@ Route::post('/register-user',[AdminAuthController::class,'RegisterUser']);
 Route::post('/login-user',[AdminAuthController::class,'loginUser']);
 Route::get('/dashboard',[AdminAuthController::class,'dashboard'])->middleware('isLoggedIn');
 Route::get('/logout',[AdminAuthController::class,'logout']);
+
+
+
+//Products 
+Route::resource('/products', ProductController::class)->middleware('isLoggedIn');
+//Category
+Route::resource('/categories', CategoryController::class)->middleware('isLoggedIn');
+
 
