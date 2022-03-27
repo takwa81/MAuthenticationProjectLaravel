@@ -31,7 +31,7 @@
                             @foreach ($products as $item)
                                 <tr>
                                     <th scope="row">
-                                    <div class="tm-gray-circle"><img src="{{ URL::to('/images/products') }}/{{ $item->image }}" alt="Avatar Image" class="rounded-circle" width="100" height="100"></div>
+                                    <div class=""><img src="{{ URL::to('/images/products') }}/{{ $item->image }}" alt="Avatar Image" class="rounded-circle" width="100" height="100"></div>
                                     </th>
                                     <td class="tm-product-name">{{ $item->name }} </td>
                                     <td>{{ Illuminate\Support\Str::limit($item->description, 20) }}</td>

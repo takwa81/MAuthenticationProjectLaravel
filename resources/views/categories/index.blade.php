@@ -29,7 +29,7 @@
                                 <tr>
                                 <td class="tm-product-name">{{ $item->name }} </td>
                                     <th scope="row">
-                                    <div class="tm-gray-circle"><img src="{{ URL::to('/images/categories') }}/{{ $item->image }}" alt="Avatar Image" class="rounded-circle" width="100" height="100"></div>
+                                    <div class=""><img src="{{ URL::to('/images/categories') }}/{{ $item->image }}" alt="Avatar Image" class="rounded-circle" width="100" height="100"></div>
                                     </th>
                                     <td>
                                     <a href="{{ route('categories.show', $item->id) }}" title="Edit Student"><button class="btn btn-warning btn-sm" style="border-radius:15px;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>View</button></a>

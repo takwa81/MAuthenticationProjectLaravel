@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Add Product - Dashboard HTML Template</title>
+    <title>{{ config('app.name') }}</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:400,700"
@@ -45,7 +45,12 @@
                                 <!-- <span class="sr-only">(current)</span> -->
                             </a>
                         </li>
-                      
+                        <li class="nav-item">
+                            <a class="nav-link" href="news">
+                            <i class="fa fa-chart-line"></i>
+                                News
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="products">
                                 <i class="fas fa-shopping-cart"></i>
@@ -57,6 +62,12 @@
                             <a class="nav-link" href="categories">
                             <i class="fa fa-asterisk"></i>
                                 Category
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories">
+                            <i class="fas fa-check-circle"></i>
+                                Orders
                             </a>
                         </li>
                         <li class="nav-item dropdown">

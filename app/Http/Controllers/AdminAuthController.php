@@ -64,7 +64,7 @@ class AdminAuthController extends Controller
     }
     public function loginUser(Request $request){
         $request->validate([
-            'email' => 'required|email',
+            'email'=>'required|email|exists:admins',
             'password' => 'required|min:5|max:12'
         ]);
         $user = Admin::where('email' , '=' , $request->email)->first();
@@ -79,7 +79,7 @@ class AdminAuthController extends Controller
 
         }
         else{
-            return back()->with('fail','this email not registered');
+            return back()->with('fail','this email Not Defined');
         }
 
     }

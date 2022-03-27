@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,5 +31,5 @@ Route::get('/logout',[AdminAuthController::class,'logout']);
 Route::resource('/products', ProductController::class)->middleware('isLoggedIn');
 //Category
 Route::resource('/categories', CategoryController::class)->middleware('isLoggedIn');
-
-
+//News
+Route::resource('/news',NewsController::class)->middleware('isLoggedIn');
