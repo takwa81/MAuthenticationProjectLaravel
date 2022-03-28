@@ -15,6 +15,7 @@ class User extends Authenticatable  implements JWTSubject
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+
     /**
      * The attributes that are mass assignable.
      *
@@ -25,7 +26,10 @@ class User extends Authenticatable  implements JWTSubject
         'email',
         'password',
     ];
-
+    public function order_details()
+        {
+            return $this->hasMany(OrderDetail::class);
+        }
     /**
      * The attributes that should be hidden for serialization.
      *

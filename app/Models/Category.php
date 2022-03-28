@@ -14,11 +14,4 @@ class Category extends Model
         return $this->hasMany(Product::class);
     }
 
-    // public static function boot(){
-    //     static::deleting(function(){
-    //         foreach($this->products as $product){
-    //             $product->deleteImage($product->id);
-    //         }
-    //     });
-    // }
 }
