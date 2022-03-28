@@ -51,7 +51,7 @@
                         </table>
                     </div>
                     <!-- table container -->
-                    <a href="{{ route('categories.create') }}" class="btn btn-primary btn-block text-uppercase mb-3">Add new product</a>
+                    <a href="{{ route('categories.create') }}" class="btn btn-primary btn-block text-uppercase mb-3">Add new Category</a>
                 </div>
             </div>
        
