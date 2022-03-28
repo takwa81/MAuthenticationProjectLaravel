@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Authintication
+
 Route::get('/',[AdminAuthController::class,'login']);
 Route::get('/login',[AdminAuthController::class,'login'])->middleware('alreadyLoggedIn');
 Route::get('/register',[AdminAuthController::class,'register']);

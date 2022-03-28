@@ -113,7 +113,9 @@ class CategoryController extends Controller
         $category->delete();
         if (File::exists(public_path('images/categories/' . $category->image))) {
             File::delete(public_path('images/categories/' . $category->image));
-        } else {
+        }
+       
+         else {
             dd("error");
         }
         return redirect()->route('categories.index')->with(key: "success", value: "category deleted successflly");

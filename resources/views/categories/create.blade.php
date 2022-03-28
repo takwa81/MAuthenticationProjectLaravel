@@ -135,12 +135,12 @@
                 </div>
                 <div class="custom-file mt-3 mb-3">
                   <input id="fileInput" type="file" name="image" style="display:none;" />
-                  <input
+                  <!-- <input
                     type="button"
                     class="btn btn-primary btn-block mx-auto"
                     value="UPLOAD PRODUCT IMAGE"
                     onclick="document.getElementById('fileInput').click();"
-                  />
+                  /> -->
                 </div>
                   </div>
               </div>
